@@ -1,0 +1,172 @@
+* {
+    font-family: serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+/* ===============================[NAVBAR]=============================== */
+
+
+#navbar-icon {
+    width: 30px;
+    margin-left: 1%;
+}
+
+.navbar-link {
+    color: rgb(162, 0, 255);
+    margin: 5px 1%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#shade-text {
+    color: rgba(162, 0, 255, 0.5);
+}
+
+.navbar-link:hover {
+    color: rgba(162, 0, 255, 0.5);
+}
+
+/* ===============================[HEADER]=============================== */
+
+
+header {
+    margin-top: 7%;
+}
+
+#reeniebeanie {
+    font-family: 'Reenie Beanie', sans-serif;
+    font-size: 5rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+#aboutme-img {
+    filter: grayscale(100);
+    display: flex;
+    margin: 10% auto 6% auto;
+    width: 80%;
+}
+
+/* ===============================[MAIN]=============================== */
+
+.aboutme {
+    margin: 0% 10%;
+}
+
+.text-aboutme {
+    margin: 2% 3%;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.item {
+    position: relative;
+    width: 50%;
+}
+
+
+.item p {
+    font-size: medium;
+}
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .item:hover {
+    filter:grayscale(100);
+  }
+  
+  .item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .projeto01 {
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid black;
+    padding: 3%; 
+  }
+
+
+/* ===============================[FOOTER]=============================== */
+
+
+footer {
+    background-color: rgb(173, 173, 173);
+    color: beige;
+    padding: 2rem 0;
+    margin-top: 5%;
+}
+
+.contact-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+footer pre {
+    margin: 3%;
+    text-align: center;
+    /* skapa ny class */
+}
+
+#test1 {
+    margin: 4% 5% auto auto;
+}
+
+#test2 {
+    display: flex;
+    margin: 4% auto auto 5%;
+    flex-direction: column;
+}
+
+#test2 h3 {
+    margin-bottom: 3%;
+}
+
+.input-box {
+    width: 25rem;
+    opacity: 0.5;
+}
+
+#input-button {
+    background-color: transparent;
+    color: beige;
+    border: none;
+    width: 55px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.project-image-small {
+    display: flex;
+}
