@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../media/tab-icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Welcome | Björn Bergström </title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-light fixed-top justify-content-start" style="background-color: grey" ;>
+        <img id="navbar-icon" src="../media/icons8-internet.gif" alt="Navbar">
+
+        <a class="navbar-link" href="../index.html">Portfolio</a>
+        <a id="shade-text" class="navbar-link" href="./about-me.html">About me</a>
+        <a class="navbar-link" id="scroll-to-bottom">Contact me</a>
+    </nav>
+
+    <header>
+       <img id="aboutme-img" src="../media/me.jpg" alt="An picture on myself">
+    </header>
+
+    <main class="aboutme-text">
+        <h3>Hallå där!</h3>
+
+
+        <p>I hela livet har jag bott i Stockholm, men nu har jag precis flyttat till Malmö och där börjar mitt nya liv. Jag håller på att läsa till javautvecklare hois Grit Academy. Under det tidgare hela arbetslivet har jag haft det väldigt bra. Jag fick bra förmåner och även kommer nära till mina chefer. Det är en fördel med ett mindre företag, man får lära känna olika personer på ett helt annat sätt.</p>
+
+        <p>Men min tid räcker knappt till någonting. Jag var tvungen att arbeta övertid nästan hela tiden. Jag var även tvungen att äta middag på kontoret och sedan ta tupplur för att orka träna thaiboxning på natten. Jag var dessutom uppkopplad till internet från det ögonblicket jag vaknar och när jag somnar, bara på grund av arbetet. Det fanns knappt tid till att träffa vänner.</p>
+            
+        <p>När företaget gick i konkurs så kan man säga att jag körde in väggen när det inte längre fanns någonting att göra, från att ha vanligtvis jobbat lika många timmar som tre månader totalt under bara två månader. Det var ändå hur jag börjar uppskatta livet mer efteråt. Jag kommer aldrig gå tillbaka till denna tid i Stockholm. Livet har mycket mer att erbjuda än bara själva arbete, som till exempel nyligen har jag träffat en söt tjej som är nästan en kvinnlig version av mig själv. Vi brukar ha precis samma åsikter och har det lätt att prata med varandra om vad som helst men det som skiljer oss åt mest är att jag älskar adrenalinet. Det är kanske bra med en "handbroms" ibland.</p>
+
+    </main>
+
+    <footer>
+        <span class="contact-box">
+            <div id="footer-contact">
+                <h3>CONTACT</h3>
+                <h5>Björn Bergström</h5>
+                <h6>+46 70 452 68 59</h6>
+
+                <a id="footer-mailto" href="mailto:">
+                <h6>bjorn.bergstrom@gritacademy.se</h6>
+                </a>
+
+            </div>
+    
+            <div id="footer-message">
+                <h3>HIT ME UP!</h3>
+                <input class="send-box" id="input-name" type="text" placeholder="Name *">
+                <input class="send-box" id="input-mail"type="text" placeholder="Email *">
+                <input class="send-box" id="input-subject" type="text" placeholder="Subject">
+
+                <!-- LÄGG TILL FOR -->
+
+                <textarea id="input-message" class="send-box" rows="5" placeholder="Message"></textarea>
+
+                <button id="send-button">SEND!</button>
+            </div>
+        </span>
+
+        <pre id="copyright">© All rights reserved | Björn Bergström 2022</pre>
+
+    </footer>
+
+
+    <script> 
+        // Scroll to bottom method
+        document.querySelector("#scroll-to-bottom").addEventListener("click", () => {
+        var scrollingElement = (document.scrollingElement || document.body);
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./media/tab-icon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Welcome | Björn Bergström </title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-light fixed-top justify-content-start" style="background-color: grey" ;>
+        <img id="navbar-icon" src="./media/icons8-internet.gif" alt="Navbar">
+
+        <a id="shade-text" class="navbar-link" href="./index.html">Portfolio</a>
+        <a class="navbar-link" href="./html/about-me.html">About me</a>
+        <a class="navbar-link" id="scroll-to-bottom">Contact me</a>
+    </nav>
+
+    <header>
+        <h2 id="font-reeniebeanie" class="align-center">My portfolio</h2>
+
+        <pre class="align-center">Click on a picture</pre>
+    </header>
+
+    <main class="container">
+
+        <div class="item">
+            <a href="./html/miniproject-1.html">
+                <img src="./media/miniproject1-main.JPG" class="display-img" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h1>Miniprojekt 1</h1>
+                        <p>En webbsida om mig själv</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+  
+        <div class="item">
+            <a href="./html/miniproject-2.html">
+                <img src="./media/miniproject2-main.jpg" class="display-img" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h1>Miniprojekt 2</h1>
+                        <p>En webbsida åt en restaurang</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./html/art-gallery.html">
+                <img src="./media/artgallery-main.JPG" class="display-img" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h1>Konstgalleri</h1>
+                        <p>Ett projekt med konstnären</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+              
+        <div class="item">
+            <a href="./html/overlay.html">
+                <img src="./media/overlay-main.jpg" class="display-img" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h1>Overlay</h1>
+                        <p>Ett projekt med overlay</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <span class="contact-box">
+            <div id="footer-contact">
+                <h3>CONTACT</h3>
+                <h5>Björn Bergström</h5>
+                <h6>+46 70 452 68 59</h6>
+
+                <a id="footer-mailto" href="mailto:">
+                <h6>bjorn.bergstrom@gritacademy.se</h6>
+                </a>
+
+            </div>
+    
+            <div id="footer-message">
+                <h3>HIT ME UP!</h3>
+                <input class="send-box" id="input-name" type="text" placeholder="Name *">
+                <input class="send-box" id="input-mail"type="text" placeholder="Email *">
+                <input class="send-box" id="input-subject" type="text" placeholder="Subject">
+
+                <!-- LÄGG TILL FOR -->
+
+                <textarea id="input-message" class="send-box" rows="5" placeholder="Message"></textarea>
+
+                <button id="send-button">SEND!</button>
+            </div>
+        </span>
+
+        <pre id="copyright">© All rights reserved | Björn Bergström 2022</pre>
+
+    </footer>
+
+    <script>
+    document.querySelector("#scroll-to-bottom").addEventListener("click", () => {
+    var scrollingElement = (document.scrollingElement || document.body);
+    scrollingElement.scrollTop = scrollingElement.scrollHeight;
+    })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../media/tab-icon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Overlay | Björn Bergström </title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-light fixed-top justify-content-start" style="background-color: grey" ;>
+        <img id="navbar-icon" src="../media/icons8-internet.gif" alt="Navbar">
+
+        <a class="navbar-link" href="../index.html">Portfolio</a>
+        <a class="navbar-link" href="../html/about-me.html">About me</a>
+        <a class="navbar-link" id="scroll-to-bottom">Contact me</a>
+    </nav>
+
+    <header>
+        <h2  id="font-reeniebeanie" class="align-center">Overlay</h2>
+    </header>
+
+    <main>
+        <img src="../media/overlay-main.jpg" class="display-img" alt="">
+
+        <div class="projects-img-small">
+            <img src="../media/overlay-small.jpg" class="display-img" alt="">    
+            <img src="../media/overlay-small.jpg" class="display-img" alt="">    
+            <img src="../media/overlay-small.jpg" class="display-img" alt="">    
+        </div>
+
+        <div class="projects-text">
+            <h2>En funktion till ett projekt</h2>
+            <p>Jag brukar dela upp mina projekt ibland till flera mindre för att sedan sätta ihop alla bitar till ett. Det blir mycket enklare att experimentera. När det funkar precis som jag vill så är det bara att klistera in koderna. Det är bra att våga testa på olika saker. </p>
+            <p>Det här funktionen har jag haft problem med men när jag delade upp den till ett eget projekt, kunde jag lösa det direkt. Funktionen går ut på att när man har muspekaren över en bild så dyker ett överdrag med rubrik upp.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <span class="contact-box">
+            <div id="footer-contact">
+                <h3>CONTACT</h3>
+                <h5>Björn Bergström</h5>
+                <h6>+46 70 452 68 59</h6>
+
+                <a id="footer-mailto" href="mailto:">
+                <h6>bjorn.bergstrom@gritacademy.se</h6>
+                </a>
+
+            </div>
+    
+            <div id="footer-message">
+                <h3>HIT ME UP!</h3>
+                <input class="send-box" id="input-name" type="text" placeholder="Name *">
+                <input class="send-box" id="input-mail"type="text" placeholder="Email *">
+                <input class="send-box" id="input-subject" type="text" placeholder="Subject">
+
+                <!-- LÄGG TILL FOR -->
+
+                <textarea id="input-message" class="send-box" rows="5" placeholder="Message"></textarea>
+
+                <button id="send-button">SEND!</button>
+            </div>
+        </span>
+
+        <pre id="copyright">© All rights reserved | Björn Bergström 2022</pre>
+
+    </footer>
+
+    <script>
+        document.querySelector("#scroll-to-bottom").addEventListener("click", () => {
+        var scrollingElement = (document.scrollingElement || document.body);
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        })
+    </script>
+    
+</body>
+
+</html>
