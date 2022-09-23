@@ -3,6 +3,7 @@
 Ett slutprojekt med extra features;
 
 Gif i navbaren
+
 Overlay i projektbilderna på Index
 'mailto' funktion i footer 
 Ett filter med grayscalem hover till projektbilderna samt bilden på mig själv 
